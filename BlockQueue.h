@@ -8,7 +8,7 @@ template <typename T>
 class BlockQueue
 {
 public:
-	void Push(T obj)
+	void Push(T& obj)
 	{
 		{
 			std::unique_lock<std::mutex> ul(mtx);
